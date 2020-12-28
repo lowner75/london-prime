@@ -1,0 +1,37 @@
+{
+    "name": "london-prime",
+    "version": "1.0.0",
+    "description": "London Prime",
+    "main": "index.html",
+    "scripts": {
+        "start": "npm run watch:all",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lite": "lite-server",
+        "scss": "sass --watch css/style.scss css/style.css",
+        "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lowner75/london-prime.git"
+    },
+    "author": "Bryan Lown",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lowner75/london-prime/issues"
+    },
+    "homepage": "https://github.com/lowner75/london-prime#readme",
+    "devDependencies": {
+        "lite-server": "^2.6.1",
+        "onchange": "^3.3.0",
+        "open-sans-fonts": "^1.6.2",
+        "parallelshell": "^3.0.1"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0",
+        "fontsource-open-sans": "^4.0.0",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.12.9",
+        "yarn": "^1.22.10"
+    }
+}
