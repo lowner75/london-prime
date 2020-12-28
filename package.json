@@ -22,13 +22,18 @@
     },
     "homepage": "https://github.com/lowner75/london-prime#readme",
     "devDependencies": {
+        "@openfonts/open-sans_all": "^1.44.2",
+        "@openfonts/roboto_all": "^1.44.1",
+        "@openfonts/roboto-condensed_all": "^1.44.2",
         "lite-server": "^2.6.1",
         "onchange": "^3.3.0",
         "open-sans-fonts": "^1.6.2",
         "parallelshell": "^3.0.1"
     },
     "dependencies": {
+        "@openfonts/nunito-sans_all": "^1.44.2",
         "bootstrap": "^4.0.0",
+        "fontsource-nunito-sans": "^4.0.0",
         "fontsource-open-sans": "^4.0.0",
         "jquery": "^3.3.1",
         "popper.js": "^1.12.9",
