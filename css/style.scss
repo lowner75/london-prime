@@ -196,14 +196,13 @@ body {
 }
 
 .fp-carousel-header {
-    color: #fff/*#e1ac4c*/
-    ;
-    font-family: 'Taviraj', serif;
-    font-size: 120px;
+    color: #fff;
+    font-family: 'Roboto', serif;
+    font-size: 90px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
     line-height: 1;
-    letter-spacing: 0;
+    letter-spacing: 0.05em;
     text-shadow: 0 0 10px rgba(42, 55, 75, 0.5);
     margin-top: 20px;
 }
@@ -244,9 +243,9 @@ body {
 .fp-carousel-button:active,
 .fp-carousel-button:hover {
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     color: #fff;
     background-color: none;
     height: auto;
