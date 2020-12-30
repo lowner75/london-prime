@@ -21,6 +21,7 @@
 
 <body>
 
+    <!-- Navigation -->
     <nav class="navbar navbar-dark navbar-expand-md fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -45,10 +46,12 @@
                             Developments
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Orbital House</a>
-                            <a class="dropdown-item" href="#">Gunter Grove 1</a>
-                            <a class="dropdown-item" href="#">Gunter Grove 2</a>
-                            <a class="dropdown-item" href="#">Burleigh House</a>
+                            <a class="dropdown-item" href="./developments/">View All</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./developments/orbital-house/">Orbital House</a>
+                            <a class="dropdown-item" href="./developments/gunter-grove-ground/">Gunter Grove Ground</a>
+                            <a class="dropdown-item" href="./developments/gunter-grove-garden/">Gunter Grove Garden</a>
+                            <a class="dropdown-item" href="./developments/burleigh-house/">Burleigh House</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
@@ -57,146 +60,302 @@
         </div>
     </nav>
 
-    <!-- carousel -->
-    <div id="carousel" class="carousel slide" data-ride="carousel" style="overflow: hidden; position: relative; margin-top: 100px" data-interval="5000">
+    <div id="luxy">
 
-        <div class="carousel-inner" style="position: relative">
+        <!-- Carousel -->
+        <div id="carousel" class="carousel slide" data-ride="carousel" style="overflow: hidden; position: relative; margin-top: 100px" data-interval="5000">
 
-            <div class="fp-carousel-item carousel-item active" style="width: 100%; height: 100vh; height: calc(100vh - 100px); background-color: #2f303a">
+            <div class="carousel-inner" style="position: relative">
 
-                <img src="img/splash-2.jpg" style="object-fit: cover; object-position: 50% 50%; width: 100%; height: 100%; filter: brightness(80%)" />
-                <div class="fp-carousel-overlay"></div>
+                <div class="fp-carousel-item carousel-item active" style="width: 100%; height: 100vh; height: calc(100vh - 100px); background-color: #2f303a">
 
-                <div class="fp-carousel-content-wrapper">
-                    <div class="fp-carousel-text-wrapper">
-                        <div class="fp-carousel-content">
-                            <div class="fp-carousel-content-inner">
-                                <div class="fp-carousel-text" s>Chelsea, London</div>
-                                <div class="fp-carousel-header" id="fp-carousel-header">Gunter Grove</div>
-                                <div><a class="fp-carousel-button" href="#learn-more" style="">VIEW DEVELOPMENT</a></div>
+                    <img src="img/splash-1.jpg" style="object-fit: cover; object-position: 50% 50%; width: 100%; height: 100%; filter: brightness(80%)" />
+                    <div class="fp-carousel-overlay"></div>
+
+                    <div class="fp-carousel-content-wrapper">
+                        <div class="fp-carousel-text-wrapper">
+                            <div class="fp-carousel-content">
+                                <div class="fp-carousel-content-inner">
+                                    <div class="fp-carousel-text" s>Chelsea, London</div>
+                                    <div class="fp-carousel-header" id="fp-carousel-header">Gunter Grove</div>
+                                    <div><a class="fp-carousel-button" href="#learn-more" style="">VIEW DEVELOPMENT</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="fp-carousel-item carousel-item" style="width: 100%; height: 100vh; height: calc(100vh - 100px); background-color: #2f303a">
+                <div class="fp-carousel-item carousel-item" style="width: 100%; height: 100vh; height: calc(100vh - 100px); background-color: #2f303a">
 
-                <img src="img/splash-1.jpg" style="object-fit: cover; object-position: 50% 50%; width: 100%; height: 100%; filter: brightness(80%)" />
-                <div class="fp-carousel-overlay"></div>
+                    <img src="img/splash-2.jpg" style="object-fit: cover; object-position: 50% 50%; width: 100%; height: 100%; filter: brightness(80%)" />
+                    <div class="fp-carousel-overlay"></div>
 
-                <div class="fp-carousel-content-wrapper">
-                    <div class="fp-carousel-text-wrapper">
-                        <div class="fp-carousel-content">
-                            <div class="fp-carousel-content-inner">
-                                <div class="fp-carousel-text" s>Caterham, Surrey</div>
-                                <div class="fp-carousel-header" id="fp-carousel-header">Orbital House</div>
-                                <div><a class="fp-carousel-button" href="#learn-more" style="">VIEW DEVELOPMENT</a></div>
+                    <div class="fp-carousel-content-wrapper">
+                        <div class="fp-carousel-text-wrapper">
+                            <div class="fp-carousel-content">
+                                <div class="fp-carousel-content-inner">
+                                    <div class="fp-carousel-text">Caterham, Surrey</div>
+                                    <div class="fp-carousel-header" id="fp-carousel-header">Orbital House</div>
+                                    <div><a class="fp-carousel-button" href="#learn-more" style="">VIEW DEVELOPMENT</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="fp-carousel-item carousel-item" style="width: 100%; height: 100vh; height: calc(100vh - 100px); background-color: #2f303a">
+                <div class="fp-carousel-item carousel-item" style="width: 100%; height: 100vh; height: calc(100vh - 100px); background-color: #2f303a">
 
-                <img src="img/splash-3.jpg" style="object-fit: cover; object-position: 50% 50%; width: 100%; height: 100%; filter: brightness(80%)" />
-                <div class="fp-carousel-overlay"></div>
+                    <img src="img/splash-3.jpg" style="object-fit: cover; object-position: 50% 50%; width: 100%; height: 100%; filter: brightness(80%)" />
+                    <div class="fp-carousel-overlay"></div>
 
-                <div class="fp-carousel-content-wrapper">
-                    <div class="fp-carousel-text-wrapper">
-                        <div class="fp-carousel-content">
-                            <div class="fp-carousel-content-inner">
-                                <div class="fp-carousel-text" s>Chelsea, London</div>
-                                <div class="fp-carousel-header" id="fp-carousel-header">Burleigh House</div>
-                                <div><a class="fp-carousel-button" href="#learn-more" style="">VIEW DEVELOPMENT</a></div>
+                    <div class="fp-carousel-content-wrapper">
+                        <div class="fp-carousel-text-wrapper">
+                            <div class="fp-carousel-content">
+                                <div class="fp-carousel-content-inner">
+                                    <div class="fp-carousel-text" s>Chelsea, London</div>
+                                    <div class="fp-carousel-header" id="fp-carousel-header">Burleigh House</div>
+                                    <div><a class="fp-carousel-button" href="#learn-more" style="">VIEW DEVELOPMENT</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+            <!-- End carousel inner -->
+
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev" style="z-index: 1000">
+                <i class="fa fa-chevron-left" style="font-size: 2.0em"></i>
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="display: none"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next" style="z-index: 1000">
+                <i class="fa fa-chevron-right" style="font-size: 2.0em"></i>
+                <span class="carousel-control-next-icon" aria-hidden="true" style="display: none"></span>
+                <span class="sr-only">Next</span>
+            </a>
 
         </div>
-        <!-- end carousel inner -->
+        <!-- End carousel -->
 
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev" style="z-index: 1000">
-            <i class="fas fa-chevron-left" style="font-size: 2.0em"></i>
-            <span class="carousel-control-prev-icon" aria-hidden="true" style="display: none"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next" style="z-index: 1000">
-            <i class="fas fa-chevron-right" style="font-size: 2.0em"></i>
-            <span class="carousel-control-next-icon" aria-hidden="true" style="display: none"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <!-- Intro -->
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12 col-lg-8">
+                        <img src="img/splash-4.jpg" class="" style="width: 100%; height: auto; overflow: hidden" />
+                    </div>
+                    <div class="col-12 col-lg-4 mt-5 d-flex flex-column align-self-center">
+                        <h2 class="mb-4">Welcome to London Prime</h2>
+                        <p>London Prime was established in 2013 with the goal of creating sophisticated interior design-led property developments - homes and properties that buyers would find special. Our team has over 15 years experience in luxury interior
+                            design, which we use to separate our developments from the competition.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Developments -->
+        <div class="container-fluid pt-2 pb-0" style="background: #dfdfdf url('img/bg.jpg') no-repeat; background-position: 100% 0;">
+
+            <div class="container pt-5 pb-5">
+                <div class="row pt-3">
+                    <div class="col-12 text-center">
+                        <h2>Our Developments</h2>
+                    </div>
+                </div>
+                <div class="row pt-4 pb-2">
+                    <div class="col-12 text-center">
+                        <img src="img/logo-image-grayscale.png" style="display: inline" />
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-6 offset-3 text-center pt-4 pb-5">London Prime is proud to have worked on a number projects within London and the Home Counties now, developing almost £7m worth of properties, and creating 22 new homes. We're also proud to announce that average returns to our investors
+                        have exceeded 40% on all of our projects.</div>
+                </div>
+
+                <!-- Orbital House -->
+                <div class="container fp-development">
+                    <div class="row mb-0">
+                        <div class="sold"><img src="img/sold.png" /></div>
+                        <div class="col-12 col-xl-6 mb-0">
+                            <div class="fp-dev-img-text d-flex flex-column align-items-center text-center">
+                                <div classs="h-100 d-inline-block">
+                                    <div class="locale">Caterham, Surrey</div>
+                                    <div class="title" id="fp-carousel-header">Orbital House</div>
+                                </div>
+                            </div>
+                            <img src="img/fp-orbital-house.jpg" />
+                        </div>
+                        <div class="col-12 col-xl-6 d-flex flex-column align-self-center px-4">
+                            <div class="header">
+                                <h3>Orbital House</h3>
+                            </div>
+                            <div class="sub-header">Caterham, Surrey CR3
+                                <div class="status"><strong> - SOLD</strong></div>
+                            </div>
+                            <div class="location"><i class="fa fa-map-marker" style="padding: 0 11px 0 2px"></i> 0.2 miles from Caterham Station</div>
+                            <div class="availability"><i class="fa fa-home" style="padding-right: 6px"></i> 19 x 1- and 2-bedroom apartments, including 3 penthouses</div>
+                            <div class="pricing"><i class="fa fa-gbp" style="padding: 0 11px 0 2px"></i> £190,000 - £350,000</div>
+                            <div class="description">A collection of 19 contemporary 1- and 2-bedroom apartments located in Caterham, Surrey. The development is situated in the heart of Caterham village, just a stone's throw from the station, with connections to central London
+                                in under 45 minutes. Perfect for commuting.</div>
+                            <button type="button" class="btn"><a href="developments/orbital-house/">View Development</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gunter Grove Apartment No. 1 -->
+                <div class="container fp-development">
+                    <div class="row mb-0">
+                        <div class="sold"><img src="img/sold.png" /></div>
+                        <div class="col-12 col-xl-6 mb-0">
+                            <div class="fp-dev-img-text d-flex flex-column align-items-center text-center">
+                                <div classs="h-100 d-inline-block">
+                                    <div class="locale">Chelsea, London SW10</div>
+                                    <div class="title" id="fp-carousel-header">Gunter Grove</div>
+                                </div>
+                            </div>
+                            <img src="img/fp-gunter-grove-1.jpg" />
+                        </div>
+                        <div class="col-12 col-xl-6 d-flex flex-column align-self-center px-4">
+                            <div class="header">
+                                <h3>Gunter Grove Apartment No. 1</h3>
+                            </div>
+                            <div class="sub-header">Chelsea, London SW10
+                                <div class="status"><strong> - SOLD</strong></div>
+                            </div>
+                            <div class="location"><i class="fa fa-map-marker" style="padding: 0 11px 0 2px"></i> 0.6 miles from Fulahm Broadway Station</div>
+                            <div class="availability"><i class="fa fa-home" style="padding-right: 6px"></i> 2-bedroom apartment</div>
+                            <div class="pricing"><i class="fa fa-gbp" style="padding: 0 11px 0 2px"></i> £1,000,000</div>
+                            <div class="description">A beautifully finished 2-bedroom raised ground floor apartment situated on Gunter Grove, just minutes away from the shopping and attractions of Chelsea's famous Kings Road. The property is finished to the highest specification.</div>
+                            <button type="button" class="btn"><a href="developments/gunter-grove-no-1/">View Development</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gunter Grove Apartment No. 2 -->
+                <div class="container fp-development">
+                    <div class="row mb-0">
+                        <div class="sold"><img src="img/sold.png" /></div>
+                        <div class="col-12 col-xl-6 mb-0">
+                            <div class="fp-dev-img-text d-flex flex-column align-items-center text-center">
+                                <div classs="h-100 d-inline-block">
+                                    <div class="locale">Chelsea, London SW10</div>
+                                    <div class="title" id="fp-carousel-header">Gunter Grove</div>
+                                </div>
+                            </div>
+                            <img src="img/fp-gunter-grove-2.jpg" />
+                        </div>
+                        <div class="col-12 col-xl-6 d-flex flex-column align-self-center px-4">
+                            <div class="header">
+                                <h3>Gunter Grove Apartment No. 2</h3>
+                            </div>
+                            <div class="sub-header">Chelsea, London SW10
+                                <div class="status"><strong> - SOLD</strong></div>
+                            </div>
+                            <div class="location"><i class="fa fa-map-marker" style="padding: 0 11px 0 2px"></i> 0.6 miles from Fulahm Broadway Station</div>
+                            <div class="availability"><i class="fa fa-home" style="padding-right: 6px"></i> 2-bedroom apartment</div>
+                            <div class="pricing"><i class="fa fa-gbp" style="padding: 0 11px 0 2px"></i> £1,500,000</div>
+                            <div class="description">A beautifully finished 2-bedroom lower ground floor apartment situated on Gunter Grove, just minutes away from the shopping and attractions of Chelsea's famous Kings Road. The property is finished to the highest specification.</div>
+                            <button type="button" class="btn"><a href="developments/gunter-grove-no-2/">View Development</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burleigh House -->
+                <div class="container fp-development">
+                    <div class="row mb-0">
+                        <div class="sold"><img src="img/sold.png" /></div>
+                        <div class="col-12 col-xl-6 mb-0">
+                            <div class="fp-dev-img-text d-flex flex-column align-items-center text-center">
+                                <div classs="h-100 d-inline-block">
+                                    <div class="locale">Chelsea, London SW3</div>
+                                    <div class="title" id="fp-carousel-header">Burleigh House</div>
+                                </div>
+                            </div>
+                            <img src="img/fp-burleigh-house.jpg" />
+                        </div>
+                        <div class="col-12 col-xl-6 d-flex flex-column align-self-center px-4">
+                            <div class="header">
+                                <h3>Burleigh House</h3>
+                            </div>
+                            <div class="sub-header">Chelsea, London SW3
+                                <div class="status"><strong> - SOLD</strong></div>
+                            </div>
+                            <div class="location"><i class="fa fa-map-marker" style="padding: 0 11px 0 2px"></i> 1.0 mile from South Kensignton Station</div>
+                            <div class="availability"><i class="fa fa-home" style="padding-right: 6px"></i> 2-bedroom apartment</div>
+                            <div class="pricing"><i class="fa fa-gbp" style="padding: 0 11px 0 2px"></i> £695,000</div>
+                            <div class="description">A beautifully finished 2-bedroom apartment situated on Beaufort Street in Chelsea, just seconds away from the shopping and attractions of Chelsea's famous Kings Road. The property is finished to the highest specification.</div>
+                            <button type="button" class="btn"><a href="developments/burleigh-house/">View Development</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Holding image -->
+        <div class="container-fluid text-center pb-5 px-0" style="position: relative">
+            <div>
+                <img src="img/splash-5.jpg" style="height: 600px; width: 100%; object-fit: cover; filter: brightness(70%)" />
+                <div class="holding-image">
+                    <div>
+                        <div class="mb-4">"We provide a range of services, including property development, property sourcing, interior design, and property staging."</div>
+                        <a href="about.html">
+                            <div style="display: inline; border: solid 2px #fff; font-size: 12px; padding: 14px 28px; color: #fff">LEARN MORE</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-content">
+                    <div class="col-12 col-lg-4">
+                        <h4 class="mt-0">Contact Us</h4>
+                        <address>
+                        London Prime Ltd<br>
+                        Suite 61, 405 Kings Road<br>
+                        London SW10 0BB<br><br>
+                        <i class="fa fa-envelope fa-lg" style="padding-right: 5px"></i> <a href="mailto:info@londonprimeltd.com">info@londonprimeltd.com</a>
+                                </address>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h4 class="mt-0">About Us</h4>
+                        <div>London Prime is a London based property developer specializing in both luxury residential and multi-unit schemes in greater London as well as the surrounding counties. We work on both new build and conversion projects within both
+                            the residential and mixed used sectors.</div>
+                    </div>
+                    <div class="col-12 col-lg-1">
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h4 class="mt-0">Connect</h4>
+                        <div class="text-left">
+                            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/London-Prime-Ltd-846104022074901/"><i class=" fa fa-facebook fa-sm"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/company/london-prime-ltd-"><i class="fa fa-linkedin fa-sm"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/"><i class="fa fa-twitter fa-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-copyright">
+                    <div class="col-12">
+                        <p>© Copyright 2020 London Prime Ltd</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
-    <!-- end carousel -->
+    <!-- End Luxy -->
 
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Welcom to London Prime</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col-12 col-sm-6 align-self-center">
-                    <div class="row align-items-center">
-                        <div class="col-sm-6">
-                            <img src="img/logo.png" class="img-fluid">
-                        </div>
-                        <div class="col-sm-6">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <h5>London Prime</h5>
-                    <address>
-                        Suite 61, 405 Kings Road<br>
-                        London SW10 0BB<br>
-                        United Kingdom<br><br>
-                        <i class="fa fa-phone fa-lg"></i> Tel.: +852 1234 5678<br>
-                        <i class="fa fa-envelope fa-lg"></i> Email: <a href="mailto:info@londonprimeltd.com">info@londonprimeltd.com</a>
-                    </address>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <h5>About Us</h5>
-                    <div>London Prime is a London based property developer specializing in both luxury residential and multi-unit schemes in greater London as well as the surrounding counties. We work on both new build and conversion projects within both the
-                        residential and mixed used sectors.</div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class=" fa fa-facebook fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:confusion@food.net"><i class="fa fa-envelope-o fa-lg"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-left">
-                <div class="col-12">
-                    <p>© Copyright 2020 London Prime Ltd</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- jQuery first, then Popper, then Bootstrap -->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="node_modules/luxy.js/dist/js/luxy.min.js"></script>
+    <script charset="utf-8">
+        luxy.init();
+    </script>
     <!-- endbuild -->
 
 </body>
