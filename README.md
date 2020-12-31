@@ -12,33 +12,6 @@ git remote add origin <repository URL>
 git push -u origin master
 npm init [entry point index.html]
 npm install lite-server --save-dev
-
-package.json:
-{
-    "name": "london-prime",
-    "version": "1.0.0",
-    "description": "London Prime",
-    "main": "index.html",
-    "scripts": {
-        "start": "npm run lite",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "lite": "lite-server"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/lowner75/london-prime.git"
-    },
-    "author": "Bryan Lown",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/lowner75/london-prime/issues"
-    },
-    "homepage": "https://github.com/lowner75/london-prime#readme",
-    "devDependencies": {
-        "lite-server": "^2.6.1"
-    }
-}
-
 npm install --save-dev bootstrap@4.0.0
 npm install --save-dev jquery@3.3.1 popper.js@1.12.9
 npm install --save-dev node-sass@4.7.2 
