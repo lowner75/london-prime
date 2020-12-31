@@ -1,6 +1,6 @@
 # London Prime
 
-Website of London Prime, a London based developer of luxury properties. 
+Website of London Prime, a luxury property developer based in London.
 ## Installation
 
 ```bash

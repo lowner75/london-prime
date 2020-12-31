@@ -341,7 +341,7 @@
                 </div>
                 <div class="w-90" style="width: 450px; max-width: 100%; margin: 40px auto 40px auto"></div>
                 <div style="width: 600px; max-width: 100%; margin: 0 auto">
-                    <form class="fp-contact-form" style="font-family: 'Nunito Sans', sans-serif">
+                    <form class="fp-contact-form" action="common/mail_handler.php" style="font-family: 'Nunito Sans', sans-serif">
                         <div class="row my-2">
                             <div class="col-12 px-1"><input type="text" class="form-control w-100" name="first_name" placeholder="First Name:" required></div>
                         </div>
@@ -360,8 +360,8 @@
                             </div>
                         </div>
                         <div class="row px-1 pt-1">
-                            <div id="message" name="message" style="padding: 8px; width: 100%; background: #273041; border: none; border-radius: 4px; color: #fff; cursor: pointer; font-family: 'Roboto Condensed', sans-serif; font-size: 13px" unselectable="on" onselectstart="return false"
-                                onmousedown="return false">SEND ENQUIRY</div>
+                            <input type="submit" id="message" name="message" value="SEND ENQUIRY" style="padding: 8px; width: 100%; background: #273041; border: none; border-radius: 4px; color: #fff; cursor: pointer; font-family: 'Roboto Condensed', sans-serif; font-size: 13px"
+                                unselectable="on" onselectstart="return false" onmousedown="return false">
                         </div>
                     </form>
                 </div>
