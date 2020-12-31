@@ -4,14 +4,8 @@ Website of London Prime, a luxury property developer based in London.
 ## Installation
 
 ```bash
-git init
-git add .
-git commit -m “First commit”
-git log --oneline
-git remote add origin <repository URL>
-git push -u origin master
 npm init [entry point index.html]
-npm install lite-server --save-dev
+npm install --save-devlite-server
 npm install --save-dev bootstrap@4.0.0
 npm install --save-dev jquery@3.3.1 popper.js@1.12.9
 npm install --save-dev node-sass@4.7.2 
