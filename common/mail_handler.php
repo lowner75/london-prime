@@ -15,7 +15,7 @@
 		// Generate e-mail ...
 		$to = "info@londonprimeltd.com";
 		$subject = "London Prime - New Enquiry Received";
-		$body = file_get_contents("email-template.php");
+		$body = file_get_contents("email-template.html");
 		$body = str_replace("#first_name#", $first_name, $body);
 		$body = str_replace("#last_name#", $last_name, $body);
 		$body = str_replace("#telephone#", $telephone, $body);
