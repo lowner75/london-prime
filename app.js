@@ -4,48 +4,31 @@
 
 // Modules ...
 const express = require('express')
-const app = express()
+const app = new express()
+const ejs = require('ejs')
 const path = require('path')
 const open = require('open')
 app.use(express.static('public'))
 
 // App ...
+app.set('view engine', 'ejs')
 app.listen(3000, () => {
     open('http://localhost:3000');
-    console.log('App listening on port 3000.')
 })
 
 // Home ...
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'index.html'))
+    res.render('index')
 })
 
 // About ...
 app.get('/about/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'about.html'))
+    res.render('about')
 })
 
 // Contact ...
 app.get('/contact/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'contact.html'))
+    res.render('contact')
 })
 
-// Projects - Orbital House ...
-app.get('/developments/orbital-house/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'orbital-house.html'))
-})
-
-// Projects - Gunter Grove No. 1 ...
-app.get('/developments/gunter-grove-no-1/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'gunter-grove-1.html'))
-})
-
-// Projects - Gunter Grove No. 2 ...
-app.get('/developments/gunter-grove-no-2/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'gunter-grove-2.html'))
-})
-
-// Projects - Burleigh House ...
-app.get('/developments/burleigh-house/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'burleigh-house.html'))
-})
+// Projects ...
