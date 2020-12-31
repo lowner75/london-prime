@@ -18,6 +18,8 @@ npm install @openfonts/cormorant-garamond_all
 npm install font-awesome@4.7.0
 npm install bootstrap-social
 npm install luxy.js
+npm install express
+npm install ejs
 ```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

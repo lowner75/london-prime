@@ -5,11 +5,12 @@
     "main": "index.html",
     "scripts": {
         "start": "npm run watch:all",
+        "app": "node app.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lite": "lite-server",
         "scss": "sass --watch css/style.scss css/style.css",
         "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run app\""
     },
     "repository": {
         "type": "git",
@@ -28,14 +29,18 @@
         "@openfonts/roboto-condensed_all": "^1.44.2",
         "bootstrap": "^4.0.0",
         "bootstrap-social": "^5.1.1",
+        "http-server": "^0.12.3",
         "lite-server": "^2.6.1",
         "luxy.js": "^0.1.0",
         "onchange": "^3.3.0",
+        "open": "^7.3.0",
         "open-sans-fonts": "^1.6.2",
-        "parallelshell": "^3.0.1"
+        "parallelshell": "^3.0.1",
+        "trumpet": "^1.7.2"
     },
     "dependencies": {
         "@openfonts/nunito-sans_all": "^1.44.2",
+        "express": "^4.17.1",
         "font-awesome": "^4.7.0",
         "fontsource-nunito-sans": "^4.0.0",
         "fontsource-open-sans": "^4.0.0",
