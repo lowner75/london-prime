@@ -4,7 +4,6 @@ Website of London Prime, a luxury property developer based in London.
 ## Installation
 
 ```bash
-npm init
 npm install --save-dev lite-server
 npm install --save-dev bootstrap@4.0.0
 npm install --save-dev jquery@3.3.1 popper.js@1.12.9
