@@ -50,6 +50,10 @@ h6 {
   transform: scale(1.1);
 }
 
+.navbar-toggler {
+  color: #d4af37;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -81,6 +85,10 @@ h6 {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #d8bb5d;
+}
+
+.navbar-collapse {
+  background: #273041;
 }
 
 .dropdown-menu {
@@ -383,6 +391,11 @@ h6 {
   text-decoration: none;
 }
 
+@media (max-width: 1140px) {
+  .fp-development-text {
+    padding: 30px 30px 20px 30px;
+  }
+}
 .sold {
   position: absolute;
   top: -10px;
