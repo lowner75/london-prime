@@ -419,6 +419,10 @@ h6 {
     padding: 0 10%;
   }
 }
+.form-control {
+  font-size: 10pt;
+}
+
 .footer {
   color: #6a6a6a;
   width: 100%;
