@@ -5,12 +5,10 @@
 // Modules ...
 const express = require('express')
 const app = new express()
-const ejs = require('ejs')
 const path = require('path')
 const open = require('open')
-app.use(express.static('public'))
-
-// App ...
+app.use(express.static('public'))\
+    // App ...
 app.set('view engine', 'ejs')
 app.listen(3000, () => {
     open('http://localhost:3000');
@@ -32,3 +30,15 @@ app.get('/contact/', (req, res) => {
 })
 
 // Projects ...
+app.get('/developments/orbital-house/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'orbital-house.html'))
+})
+app.get('/developments/gunter-grove-no-1/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'gunter-grove-1.html'))
+})
+app.get('/developments/gunter-grove-no-2/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'gunter-grove-2.html'))
+})
+app.get('/developments/burleigh-house/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'burleigh-house.html'))
+})

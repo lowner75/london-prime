@@ -10,7 +10,7 @@
         "lite": "lite-server",
         "scss": "sass --watch css/style.scss css/style.css",
         "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run app\""
+        "watch:all": "parallelshell 'npm run watch:scss' 'npm run app'"
     },
     "repository": {
         "type": "git",
