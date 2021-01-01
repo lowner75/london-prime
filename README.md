@@ -1,6 +1,6 @@
 # London Prime
 
-Website of London Prime, a luxury property developer based in London. This is my Capstone project for the Coursera Bootstrap 4 course.
+Website for London Prime, a luxury property developer based in London. This is my Capstone project for the Coursera Bootstrap 4 course.
 ## Installation
 
 ```bash
