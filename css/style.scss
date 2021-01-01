@@ -10,7 +10,7 @@ $dark-blue: rgba(39, 48, 65, 1);
 body {
     color: #666;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 10pt;
+    font-size: 13px;
     line-height: 1.65;
     background: #e9ecef;
     background-position: 0 100px;
@@ -32,9 +32,9 @@ h3,
 h4,
 h5,
 h6 {
-    color: #1a1a1a;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 700;
+    color: #2a2a2a;
+    font-family: 'Roboto Condensed', serif;
+    font-weight: 400;
 }
 
 .image-zoom {
@@ -462,9 +462,9 @@ h6 {
     padding: 50px 0 30px 0;
     background: #fff;
     font-size: 12px;
-    h4 {
+    h5 {
         color: #1a1a1a;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     .footer-content {
         .col-12 {
@@ -475,4 +475,51 @@ h6 {
         padding-top: 20px;
         border-top: solid 1px #ccc;
     }
+}
+
+
+/* Change this breakpoint if you change the breakpoint of the navbar */
+
+@media (min-width: 1140px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
 }

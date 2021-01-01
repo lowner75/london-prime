@@ -35,10 +35,10 @@ app.get('/contact/', (req, res) => {
 app.get("/developments/orbital-house/", (req, res) => {
     res.render("orbital-house");
 });
-app.get("/developments/gunter-grove-luxury-apartment/", (req, res) => {
+app.get("/developments/gunter-grove-apartment-no-1/", (req, res) => {
     res.render("gunter-grove-1");
 });
-app.get("/developments/gunter-grove-garden-apartment/", (req, res) => {
+app.get("/developments/gunter-grove-apartment-no-2/", (req, res) => {
     res.render("gunter-grove-2");
 });
 app.get("/developments/burleigh-house", (req, res) => {
