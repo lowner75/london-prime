@@ -10,7 +10,12 @@
         "lite": "lite-server",
         "scss": "sass --watch css/style.scss css/style.css",
         "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run app\""
+        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run app\"",
+        "clean": "rimraf dist",
+        "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts -f node_modules/@openfonts/open-sans_all/files/*300* dist/fonts -f node_modules/@openfonts/open-sans_all/files/*400* -f node_modules/@openfonts/open-sans_all/files/* dist/fonts -f node_modules/@openfonts/nunito-sans_all/files/* dist/fonts -f node_modules/@openfonts/roboto_all/files/* dist/fonts -f node_modules/@openfonts/roboto-condensed_all/files/* dist/fonts",
+        "imagemin": "imagemin img/* -o dist/img",
+        "usemin": "usemin views/index.ejs -d dist -o dist/index.html",
+        "build": "npm run clean && npm run imagemin && npm run copyfonts"
     },
     "repository": {
         "type": "git",
@@ -25,12 +30,16 @@
     "devDependencies": {
         "@openfonts/cormorant-garamond_all": "^1.44.2",
         "@openfonts/open-sans_all": "^1.44.2",
-        "@openfonts/roboto_all": "^1.44.1",
         "@openfonts/roboto-condensed_all": "^1.44.2",
+        "@openfonts/roboto_all": "^1.44.1",
         "bootstrap": "^4.0.0",
         "bootstrap-social": "^5.1.1",
+        "cssmin": "^0.4.3",
         "ejs": "^3.1.5",
+        "htmlmin": "0.0.7",
         "http-server": "^0.12.3",
+        "imagemin": "^7.0.1",
+        "imagemin-cli": "^6.0.0",
         "lightgallery.js": "^1.4.0",
         "lite-server": "^2.6.1",
         "luxy.js": "^0.1.0",
@@ -39,7 +48,11 @@
         "open": "^7.3.0",
         "open-sans-fonts": "^1.6.2",
         "parallelshell": "^3.0.1",
-        "trumpet": "^1.7.2"
+        "rimraf": "^3.0.2",
+        "trumpet": "^1.7.2",
+        "uglifyjs": "^2.4.11",
+        "usemin": "^0.6.0",
+        "usemin-cli": "^0.6.0"
     },
     "dependencies": {
         "@openfonts/nunito-sans_all": "^1.44.2",
@@ -49,6 +62,7 @@
         "fontsource-open-sans": "^4.0.0",
         "jquery": "^3.3.1",
         "popper.js": "^1.12.9",
+        "uglify-js": "^3.12.4",
         "yarn": "^1.22.10"
     }
 }

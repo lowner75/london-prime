@@ -4,16 +4,17 @@
 
 // Modules ...
 const express = require('express')
+let path = require("path")
 const app = new express()
-const port = 4000
+const port = 443
 const open = require('open')
-app.use(express.static('./'));
-//app.use('./public', express.static('public'))
+app.use(express.static(path.join(__dirname, "/public")))
+app.use(express.static(path.join(__dirname, "/node_modules")))
 
 // App ...
 app.set('view engine', 'ejs')
 app.listen(port, () => {
-    open('http://localhost:' + port);
+    //open('http://localhost:' + port);
 })
 
 // Home ...
