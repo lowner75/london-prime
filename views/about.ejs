@@ -17,15 +17,85 @@
 
     <%- include('partials/navbar.ejs'); -%>
 
-    <!-- Luxy.js -->
-    <div id="luxy">
+        <!-- Luxy.js -->
+        <div id="luxy">
 
-        <%- include('partials/footer.ejs'); -%>
+            <div class="container-fluid position-relative w-100 p-0 text-center" style="height: 50vh; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/img/contact.jpg') no-repeat; background-size: cover; background-position: 50% 50%">
+                <div class="row h-100 p-0">
+                    <div class="col-12 h-100 d-flex flex-column justify-content-center">
+                        <div class="col-12 h-100 d-flex flex-column justify-content-center">
+                            <div class="fp-carousel-text">LONDON PRIME</div>
+                            <div class="fp-carousel-header">ABOUT US</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <!-- End Luxy -->
+            <div class="container py-5">
+                <div class="row py-3">
+                    <div class="col-12 col-md-6 h-100 d-flex flex-column align-self-center">
+                        <h2>Beautifully Interior Designed Property Developments.</h2>
+                        <p class="mt-4">London Prime was established in 2013 with the goal of creating beautiful and sophisticated interior design-led property developments - homes and properties that buyers would find special. Our team has over 15 years experience in
+                            the luxury interior design market, which we use to separate our developments from the competition.</p>
+                        <p>We build both single dwellings and multi-unit residential schemes in Greater London as well as the surrounding Home Counties, working on new build and conversion projects within the residential and mixed used sectors.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="/img/fp-gunter-grove-1.jpg" style="width: 100%; object-fit: cover" />
+                    </div>
+                </div>
+            </div>
 
-    <%- include('partials/scripts.ejs'); -%>
+            <div class="container-fluid bg-light">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-4">Facts and Figures</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">21 Homes Created</h5>
+                                    <p class="card-text">We've now created 21 new homes within the Greater London area.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">£7m in GDV</h5>
+                                    <p class="card-text">The total value of our combined property sales is currently almost £7m.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">40%+ RoI</h5>
+                                    <p class="card-text">The average Return on Investment for our investors is in excess of 40%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <img src="/img/splash-2.jpg" style="height: 50vh; width: 100%; object-fit: cover; object-position: 50% 75%; filter: brightness(0.85)" />
+                    <div class="holding-image text-center">
+                        "Our goal was to create beautiful, interior design-led properties. Homes that buyers would immediately fall in love with."
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/footer.ejs'); -%>
+
+        </div>
+        <!-- End Luxy -->
+
+        <%- include('partials/scripts.ejs'); -%>
 
 </body>
 
