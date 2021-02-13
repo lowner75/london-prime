@@ -1,38 +1,45 @@
-<!-- Navigation -->
 <nav class="navbar navbar-dark navbar-expand-md fixed-top">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <a class="navbar-brand mr-auto" href="#">
-            <div class="nav-logo" id="nav-logo">
-                <a href="/">
-                    <img src="/img/header-logo.png" style="display: inline; padding-right: 10px" />
-                    <span style="font-weight: 300">London</span>
-                    <img src="/img/header-logo-border.png" style="display: inline; padding: 0 4px 0 3px" />
-                    <span style="font-weight: 400">Prime</span>
-                </a>
-            </div>
-        </a>
-        <div id="Navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Developments
-                        </a>
-                    <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                        <!--<a class="dropdown-item" href="./developments/">View All</a>
-                            <div class="dropdown-divider"></div>-->
-                        <a class="dropdown-item" href="/developments/orbital-house/">Orbital House</a>
-                        <a class="dropdown-item" href="/developments/gunter-grove-apartment-no-1/">Gunter Grove Ground</a>
-                        <a class="dropdown-item" href="/developments/gunter-grove-apartment-no-2/">Gunter Grove Garden</a>
-                        <a class="dropdown-item" href="/developments/burleigh-house/">Burleigh House</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link pr-0" href="/contact/">Contact</a></li>
-            </ul>
+  <div class="container">
+
+    <div class="row m-0 w-100 d-flex align-items-center">
+
+      <div class="col-10 col-lg-6 p-0">
+        <div class="nav-logo m-0 p-2 p-sm-0" id="nav-logo">
+          <a href="/">
+            <img src="/img/header-logo.png" style="display: inline; padding: 0 10px 0 0" />
+            <span style="font-weight: 300">London</span>
+            <img src="/img/header-logo-border.png" style="display: inline; padding: 0 4px 0 3px" />
+            <span style="font-weight: 400">Prime</span>
+          </a>
         </div>
-    </div>
+      </div>
+
+      <div class="col-6 d-none m-0 d-lg-flex align-items-center justify-content-end">
+        <div id="Navbar">
+          <ul class="navbar-nav d-flex align-items-center justify-content-end">
+            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Developments </a>
+              <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/developments/orbital-house/">Orbital House</a>
+                <a class="dropdown-item" href="/developments/gunter-grove-apartment-no-1/">Gunter Grove Ground</a>
+                <a class="dropdown-item" href="/developments/gunter-grove-apartment-no-2/">Gunter Grove Garden</a>
+                <a class="dropdown-item" href="/developments/burleigh-house/">Burleigh House</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-2 m-0 p-0 d-inline d-lg-none d-flex align-items-center justify-content-end">
+        <button class="hamburger hamburger--collapse no-select" type="button" style="border: none; outline: 0">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
+  </div>
 </nav>

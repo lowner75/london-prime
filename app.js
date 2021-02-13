@@ -1,47 +1,35 @@
-//=============================================================================
-// app.js v1.0.0
-//=============================================================================
+/*
+ * --------------------------------------------- *
+ *                                               *
+ *   London Prime - app.js v1.0.0                *
+ *                                               *
+ * --------------------------------------------- *
+*/
 
 // Modules ...
 const express = require('express')
-let path = require("path")
+const path = require("path")
+
+// Define routes ...
+const routes = require("./routes/routes")
+
+// Set up app...
 const app = new express()
-const port = 443
-const open = require('open')
-app.use(express.static(path.join(__dirname, "/public")))
-app.use(express.static(path.join(__dirname, "/node_modules")))
 
-// App ...
-app.set('view engine', 'ejs')
+// Define static paths ...
+app.use(express.static(path.join(__dirname, '/public')))
+app.use('/node_modules', express.static(path.join(__dirname + '/node_modules')))
+
+// Use routes ...
+app.use('/', routes);
+
+// App listen ...
+const port = 3000
 app.listen(port, () => {
-    //open('http://localhost:' + port);
-})
-
-// Home ...
-app.get('/', (req, res) => {
-    res.render('index')
-})
-
-// About ...
-app.get('/about/', (req, res) => {
-    res.render('about')
-})
-
-// Contact ...
-app.get('/contact/', (req, res) => {
-    res.render('contact')
-})
-
-// Projects ...
-app.get("/developments/orbital-house/", (req, res) => {
-    res.render("orbital-house");
+  console.log('App listening on http://localhost:' + port + '...')
 });
-app.get("/developments/gunter-grove-apartment-no-1/", (req, res) => {
-    res.render("gunter-grove-1");
-});
-app.get("/developments/gunter-grove-apartment-no-2/", (req, res) => {
-    res.render("gunter-grove-2");
-});
-app.get("/developments/burleigh-house", (req, res) => {
-    res.render("burleigh-house");
-});
+
+// Set up view engine ...
+app.locals.basedir = path.join(__dirname, "/")
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')

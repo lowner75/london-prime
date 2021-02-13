@@ -1,0 +1,38 @@
+1) sudo nano /etc/nginx/sites-available/londonprime
+
+server {
+    listen 80;
+    server_name 213.171.208.182 londonprimeltd.com www.londonprimeltd.com;
+
+    location / {
+        proxy_pass http://localhost:3000/;
+    }
+
+    location ~* \.(svg|ico)$ {
+        expires 30d;
+        add_header Cache-Control "public";
+    }
+}
+
+
+2) sudo nano /etc/nginx/sites-available/default
+. . .
+    root /var/www/londonprime
+. . .
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    location /public {
+        root /var/www/londonprime/public;
+        try_files $uri $uri/ =404;
+    }
+
+}
+
+3) If 404 error on static files, double check package.json ...
