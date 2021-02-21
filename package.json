@@ -29,6 +29,7 @@
   "homepage": "https://github.com/lowner75/london-prime#readme",
   "devDependencies": {
     "@openfonts/cormorant-garamond_all": "^1.44.2",
+    "@openfonts/nunito-sans_all": "^1.44.2",
     "@openfonts/open-sans_all": "^1.44.2",
     "@openfonts/roboto-condensed_all": "^1.44.2",
     "@openfonts/roboto_all": "^1.44.1",
@@ -53,7 +54,7 @@
     "yarn": "^1.22.10"
   },
   "dependencies": {
-    "@openfonts/nunito-sans_all": "^1.44.2",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
     "ejs": "^3.1.5",
@@ -66,6 +67,7 @@
     "jquery": "^3.3.1",
     "lightgallery.js": "^1.4.0",
     "luxy.js": "^0.1.0",
+    "nodemailer": "^6.4.18",
     "popper.js": "^1.12.9"
   }
 }

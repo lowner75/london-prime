@@ -138,4 +138,28 @@ $(() => {
     }
   });
 
+  // Send e-mail enquiry ...
+	$('#btn-submit-enquiry').on('click', (event) => {
+
+    event.preventDefault();
+
+    const first_name = $("input[name=first_name]").val();
+    const last_name = $("input[name=last_name]").val();
+    const telephone = $("input[name=telephone]").val();
+    const email = $("input[name=email]").val();
+    const message = $("textarea[name=message]").val();
+    const data = {
+      first_name: first_name,
+      last_name: last_name,
+      telephone: telephone,
+      email: email,
+      message: message
+    };
+    console.log(data);
+
+    // Process form using ajax ...
+    $.ajax({ type: 'POST', url: '/api/send-enquiry/', data: data });
+  
+  });
+
 });

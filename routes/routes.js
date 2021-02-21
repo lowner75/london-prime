@@ -9,6 +9,7 @@
 // Modules ...
 const express = require("express");
 const router = express.Router();
+const mailController = require("../controllers/mail.controller");
 
 // Home page ...
 router.get("/", (req, res) => {
@@ -37,6 +38,11 @@ router.get("/developments/gunter-grove-apartment-no-2/", (req, res) => {
 });
 router.get("/developments/burleigh-house", (req, res) => {
   res.render("burleigh-house");
+});
+
+// Send email enquiry ...
+router.post("/api/send-enquiry/", (req, res) => {
+  mailController.sendEnquiry(req.body)
 });
 
 module.exports = router;

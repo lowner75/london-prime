@@ -1,4 +1,5 @@
 .vscode
+controllers/mail.controller.js
 node_modules
 *.docx
 *.tmp
